@@ -1,0 +1,214 @@
+﻿<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softmax - Cadastro de Fornecedor</title>
+    <link rel="stylesheet" href="css/style_menu.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_menuv.css">
+    <link rel="stylesheet" href="css/style_cad-clie.css">
+    <link rel="stylesheet" href="css/style_cad-for.css">
+    <style>
+    .first-image img{
+        height: 450px;
+        width: 500px;
+    }
+    </style>
+</head>
+
+<body>
+	<div class="Menu">
+		<nav class="sidebar">
+			<ul>
+				<li class="inicio"><a target="_blank" href="http://softmax.com.br/site2/">Home <i
+							class="fa fa-external-link"></i></a></li>
+				<li><a>Sobre</a></li>
+				<li><a>Apresentação de Telas/Funções</a>
+					<ul>
+						<!--<a href ="frame_a.html" target ="showframe">Moldura a</a><br>-->
+						<li><a href="menu.html" target="showframe">Menu Principal</a></li>
+
+						<li><a class="cad-btn">Cadastros
+								<span class="fas fa-caret-down first"></span>
+							</a> </li>
+
+						<ul class="cad-show">
+							<li><a href="cad_cliente.html">Cadastro de Clientes</a></li>
+							<li class="selecionado"><a href="cad_fornecedor.html">Cadastro de Fornecedores</a></li>
+							<li><a href="cad_transportadora.html">Cadastro de Transportadoras</a>
+							</li>
+							<li><a href="cad_pro_pa.html">Cadastro de Produto PA</a></li>
+							<li><a href="cad_pro_mp.html">Cadastro de produto MP</a></li>
+							<li><a href="cad_pro_sa.html">Cadastro de Produto SA</a></li>
+							<li><a href="cad_pro_om.html">Cadastro de produto OM</a></li>
+							<li><a href="cad_pro_dsp.html">Desenvolvimento de Produtos / Ensaios</a>
+							</li>
+							<li><a href="cad_cfop.html">Cadastro de Operações Fiscais -CFOP</a></li>
+						</ul>
+
+
+						<li><a class="mov-btn">Movimentos
+								<span class="fas fa-caret-down second"></span>
+							</a></li>
+
+						<ul class="mov-show">
+							<li><a href="mov_ped_venda.html">Pedido de Venda</a></li>
+							<li><a href="mov_ped_compra.html">Pedido de Compra</a></li>
+							<li><a href="mov_empenho.html">Empenho / Ordem de Produção</a></li>
+							<li><a href="mov_mapa_prod.html">Mapa de Produção</a></li>
+							<li><a href="mov_fn_cr.html">Finan. Contas a Receber</a></li>
+							<li><a href="mov_fn_cp.html">Finan. Contas a Pagar</a></li>
+							<li><a href="mov_fn_ch.html">Finan. Controle de Cheques</a></li>
+							<li><a href="mov_fn_cb.html">Finan. Controle Bancário</a></li>
+							<li><a href="mov_fn_cr_cnab.html">Finan. Lanç. Bancários CNAB</a></li>
+							<li><a href="mov_fn_cr_factory.html">Finan. Lanç. factory (troca de
+									títulos)</a></li>
+							<li><a href="mov_nfe.html">Emitir Nota Fiscal eletronica NF-e</a></li>
+						</ul>
+						<!-- <li><a href="#">SEO</a></li> 
+									<li><a href="#">Sistemas</a></li> -->
+						<li>
+							<a href="siglas.html">
+								Siglas
+							</a>
+						</li>
+
+						<li>
+							<a class="fis-btn">
+								Fiscal
+								<span class="fas fa-caret-down third"></span>
+							</a>
+						</li>
+
+						<ul class="fis-show">
+							<li>
+								<a href="tabela-CST-CSOSN.html">
+									Tabela origem / CST / CSO
+								</a>
+							</li>
+							<li>
+								<a href="tabela-CST-PIS-COFINS.html">
+									Tabela CST PIS/COFINS
+								</a>
+							</li>
+							<li class="big"><a href="tabela-isentoxnaotrib.html">
+									Suspensão, Diferimento, Isenção, Incidência e Não Incidência
+								</a>
+							</li>
+							<li>
+								<a href="http://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=URCYvjVMIzI="
+									target="_blank">
+									Manual do Contribuinte v6.00
+									<i class="fa fa-external-link"></i>
+								</a>
+							</li>
+							<li class="big">
+								<a href="tabela_contribuinte.html">
+									Contribuinte, contribuinte isento e não contribuinte do ICMS
+								</a>
+							</li>
+							<li>
+								<a href="http://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+									rel="noopener">
+									Sefaz
+									<i class="fa fa-external-link"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://deolhonoimposto.ibpt.org.br/" target="_blank">
+									De olho no Imposto
+									<i class="fa fa-external-link"></i>
+								</a>
+							</li>
+							<li class="big"><a href="deolhonoimposto.html">
+									De olho no Imposto - Automatizar o processo
+								</a>
+							</li>
+						</ul>
+						<li>
+							<a href="Programas.html">
+								Programas
+							</a>
+						</li>
+					</ul>
+				</li>
+				<!--<li><a href="#">Contato</a></li> -->
+			</ul>
+
+			<script>
+				$('.cad-btn').click(function () {
+					$('nav ul ul .cad-show').toggleClass("Show");
+					$('nav ul ul .first').toggleClass("rotate");
+				});
+				$('.mov-btn').click(function () {
+					$('nav ul ul .mov-show').toggleClass("Show");
+					$('nav ul ul .second').toggleClass("rotate");
+				});
+				$('.fis-btn').click(function () {
+					$('nav ul ul .fis-show').toggleClass("Show");
+					$('nav ul ul .third').toggleClass("rotate");
+				});
+			</script>
+		</nav>
+	</div>
+	<div class="top">
+		<div class="btn">
+			<span class="fas fa-bars"></span>
+		</div>
+		<script>
+			$('.btn').click(function(){
+					$(this).toggleClass("click");
+					$('.sidebar').toggleClass("show");
+					$('nav ul').toggleClass("show");
+				});
+		</script>
+	</div>
+    <main>
+        <div class="historico">
+            <div class="text">
+                <a href="#princi">
+                    <ins>Cadastro de Fornecedores</ins>
+                </a>
+                |
+                <a href="#completo">
+                    <ins>Cadastro de Fornecedores Completo</ins>
+                </a>
+            </div>
+        </div>
+
+        <div class="titulo">
+            <h1 id="princi">Cadastro de Fornecedores</h1>
+        </div>
+
+        <div class="first-image">
+            <img src="Imagens/cad_fornecedor.PNG" alt="" />
+        </div>
+
+        <div class="Conteudo" id="completo">
+            <div class="texto">
+				<h3>
+					Cadastro de Fornecedores Completo
+				</h3>
+			</div>
+            <p>O programa Maxcontrol oferece um formulário de cadastro de fornecedores completo para melhor organizar e adquirir os dados de seus fornecedores.</p>
+        </div>
+    </main>
+    <footer>
+        <div class="rodape">
+            <div class="btn-ant">
+                <a href="cad_cliente.html">Anterior</a>
+            </div>
+			<div class="btn-prox">
+                <a href="cad_transportadora.html">Próximo</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

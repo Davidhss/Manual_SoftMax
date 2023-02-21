@@ -1,0 +1,146 @@
+﻿</html>
+<html>
+
+<head>
+  <title>Menu Sistema Maxcontrol</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style_menuv.css">
+</head>
+
+<body>
+  <nav class="sidebar">
+    <ul>
+      <li class="inicio"><a target="_blank" href="http://softmax.com.br/site2/">Home <i
+            class="fa fa-external-link"></i></a></li>
+      <li><a>Sobre</a></li>
+      <li><a>Apresentação de Telas/Funções</a>
+        <ul>
+          <!--<a href ="frame_a.html" target ="showframe">Moldura a</a><br>-->
+          <li><a href="menu.html" target="showframe">Menu Principal</a></li>
+
+          <li><a class="cad-btn">Cadastros
+              <span class="fas fa-caret-down first"></span>
+            </a> </li>
+
+          <ul class="cad-show">
+            <li><a href="cad_cliente.html">Cadastro de Clientes</a></li>
+            <li><a href="cad_fornecedor.html">Cadastro de Fornecedores</a></li>
+            <li><a href="cad_transportadora.html">Cadastro de Transportadoras</a>
+            </li>
+            <li><a href="cad_pro_pa.ht">Cadastro de Produto PA</a></li>
+            <li><a href="cad_pro_mp.html">Cadastro de produto MP</a></li>
+            <li><a href="cad_pro_sa.html">Cadastro de Produto SA</a></li>
+            <li><a href="cad_pro_om.html">Cadastro de produto OM</a></li>
+            <li><a href="cad_pro_dsp.html">Desenvolvimento de Produtos / Ensaios</a>
+            </li>
+            <li><a href="cad_cfop.html">Cadastro de Operações Fiscais -CFOP</a></li>
+          </ul>
+
+
+          <li><a class="mov-btn">Movimentos
+              <span class="fas fa-caret-down second"></span>
+            </a></li>
+
+          <ul class="mov-show">
+            <li><a href="mov_ped_venda.html">Pedido de Venda</a></li>
+            <li><a href="mov_ped_compra.html">Pedido de Compra</a></li>
+            <li><a href="mov_empenho.html">Empenho / Ordem de Produção</a></li>
+            <li><a href="mov_mapa_prod.html">Mapa de Produção</a></li>
+            <li><a href="mov_fn_cr.html">Finan. Contas a Receber</a></li>
+            <li><a href="mov_fn_cp.html">Finan. Contas a Pagar</a></li>
+            <li><a href="mov_fn_ch.html">Finan. Controle de Cheques</a></li>
+            <li><a href="mov_fn_cb.html">Finan. Controle Bancário</a></li>
+            <li><a href="mov_fn_cr_cnab.html">Finan. Lanç. Bancários CNAB</a></li>
+            <li><a href="mov_fn_cr_factory.html">Finan. Lanç. factory (troca de
+                títulos)</a></li>
+            <li><a href="mov_nfe.html">Emitir Nota Fiscal eletronica NF-e</a></li>
+          </ul>
+          <!-- <li><a href="#">SEO</a></li> 
+                <li><a href="#">Sistemas</a></li> -->
+          <li>
+            <a href="siglas.html">
+              Siglas
+            </a>
+          </li>
+
+          <li>
+            <a class="fis-btn">
+              Fiscal
+              <span class="fas fa-caret-down third"></span>
+            </a>
+          </li>
+
+          <ul class="fis-show">
+            <li>
+              <a href="tabela-CST-CSOSN.html">
+                Tabela origem / CST / CSO
+              </a>
+            </li>
+            <li class="big"><a href="tabela-isentoxnaotrib.html">
+                Suspensão, Diferimento, Isenção, Incidência e Não Incidência
+              </a>
+            </li>
+            <li>
+              <a href="http://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=URCYvjVMIzI="
+                target="_blank">
+                Manual do Contribuinte v6.00
+                <i class="fa fa-external-link"></i>
+              </a>
+            </li>
+            <li class="big">
+              <a href="tabela_contribuinte.html">
+                Contribuinte, contribuinte isento e não contribuinte do ICMS
+              </a>
+            </li>
+            <li>
+              <a href="http://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+                rel="noopener">
+                Sefaz
+                <i class="fa fa-external-link"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://deolhonoimposto.ibpt.org.br/" target="_blank">
+                De olho no Imposto
+                <i class="fa fa-external-link"></i>
+              </a>
+            </li>
+            <li class="big"><a href="deolhonoimposto.html">
+                De olho no Imposto - Automatizar o processo
+              </a>
+            </li>
+          </ul>
+          <li>
+            <a href="Programas.html">
+              Programas
+            </a>
+          </li>
+        </ul>
+      </li>
+      <!--<li><a href="#">Contato</a></li> -->
+    </ul>
+
+    <script>
+      $('nav ul li').click(function () {
+        $(this).addClass("active").siblings().removeClass("active");
+      })
+      $('.cad-btn').click(function () {
+        $('nav ul ul .cad-show').toggleClass("Show");
+        $('nav ul ul .first').toggleClass("rotate");
+      })
+      $('.mov-btn').click(function () {
+        $('nav ul ul .mov-show').toggleClass("Show");
+        $('nav ul ul .second').toggleClass("rotate");
+      })
+      $('.fis-btn').click(function () {
+        $('nav ul ul .fis-show').toggleClass("Show");
+        $('nav ul ul .third').toggleClass("rotate");
+      })
+    </script>
+  </nav>
+</body>
+
+</html>

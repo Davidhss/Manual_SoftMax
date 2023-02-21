@@ -1,0 +1,40 @@
+.titulo{
+    background: #f0f0f0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+h1{
+    font-family: 'Bebas Neue', cursive;
+    color: #696969;    
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 55px;
+    transition: .3s
+}
+
+.content-one p, .content-two{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #646464;
+    line-height: 32px;
+    padding: 30px 50px;
+    font-size: 20px;
+}
+
+.imagem img{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.116);
+}
+.imagem{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+@media (max-width:600px){
+    .imagem img{
+        transform: scale(.8);
+    }
+}

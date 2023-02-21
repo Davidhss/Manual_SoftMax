@@ -1,0 +1,428 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softmax - Tabela CST/CSOSN </title>
+    <link rel="stylesheet" href="css/style_menuv.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_cst.css">
+</head>
+
+<body>
+    <div class="Menu">
+        <nav class="sidebar">
+            <ul>
+                <li class="inicio"><a target="_blank" href="http://softmax.com.br/site2/">Home <i
+                            class="fa fa-external-link"></i></a></li>
+                <li><a>Sobre</a></li>
+                <li><a>Apresentação de Telas/Funções</a>
+                    <ul>
+                        <!--<a href ="frame_a.html" target ="showframe">Moldura a</a><br>-->
+                        <li><a href="menu.html" target="showframe">Menu Principal</a></li>
+
+                        <li><a class="cad-btn">Cadastros
+                                <span class="fas fa-caret-down first"></span>
+                            </a> </li>
+
+                        <ul class="cad-show">
+                            <li><a href="cad_cliente.html">Cadastro de Clientes</a></li>
+                            <li><a href="cad_fornecedor.html">Cadastro de Fornecedores</a></li>
+                            <li><a href="cad_transportadora.html">Cadastro de Transportadoras</a>
+                            </li>
+                            <li><a href="cad_pro_pa.html">Cadastro de Produto PA</a></li>
+                            <li><a href="cad_pro_mp.html">Cadastro de produto MP</a></li>
+                            <li><a href="cad_pro_sa.html">Cadastro de Produto SA</a></li>
+                            <li><a href="cad_pro_om.html">Cadastro de produto OM</a></li>
+                            <li><a href="cad_pro_dsp.html">Desenvolvimento de Produtos / Ensaios</a>
+                            </li>
+                            <li><a href="cad_cfop.html">Cadastro de Operações Fiscais -CFOP</a></li>
+                        </ul>
+
+
+                        <li><a class="mov-btn">Movimentos
+                                <span class="fas fa-caret-down second"></span>
+                            </a></li>
+
+                        <ul class="mov-show">
+                            <li><a href="mov_ped_venda.html">Pedido de Venda</a></li>
+                            <li><a href="mov_ped_compra.html">Pedido de Compra</a></li>
+                            <li><a href="mov_empenho.html">Empenho / Ordem de Produção</a></li>
+                            <li><a href="mov_mapa_prod.html">Mapa de Produção</a></li>
+                            <li><a href="mov_fn_cr.html">Finan. Contas a Receber</a></li>
+                            <li><a href="mov_fn_cp.html">Finan. Contas a Pagar</a></li>
+                            <li><a href="mov_fn_ch.html">Finan. Controle de Cheques</a></li>
+                            <li><a href="mov_fn_cb.html">Finan. Controle Bancário</a></li>
+                            <li><a href="mov_fn_cr_cnab.html">Finan. Lanç. Bancários CNAB</a></li>
+                            <li><a href="mov_fn_cr_factory.html">Finan. Lanç. factory (troca de
+                                    títulos)</a></li>
+                            <li><a href="mov_nfe.html">Emitir Nota Fiscal eletronica NF-e</a></li>
+                        </ul>
+                        <!-- <li><a href="#">SEO</a></li> 
+									<li><a href="#">Sistemas</a></li> -->
+                        <li>
+                            <a href="siglas.html">
+                                Siglas
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="fis-btn">
+                                Fiscal
+                                <span class="fas fa-caret-down third"></span>
+                            </a>
+                        </li>
+
+                        <ul class="fis-show">
+                            <li class="selecionado">
+                                <a href="tabela-CST-CSOSN.html">
+                                    Tabela origem / CST / CSO
+                                </a>
+                            </li>
+                            <li>
+								<a href="tabela-CST-PIS-COFINS.html">
+									Tabela CST PIS/COFINS
+								</a>
+							</li>
+                            <li class="big"><a href="tabela-isentoxnaotrib.html">
+                                    Suspensão, Diferimento, Isenção, Incidência e Não Incidência
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=URCYvjVMIzI="
+                                    target="_blank">
+                                    Manual do Contribuinte v6.00
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </li>
+                            <li class="big">
+                                <a href="tabela_contribuinte.html">
+                                    Contribuinte, contribuinte isento e não contribuinte do ICMS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+                                    rel="noopener">
+                                    Sefaz
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://deolhonoimposto.ibpt.org.br/" target="_blank">
+                                    De olho no Imposto
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </li>
+                            <li class="big"><a href="deolhonoimposto.html">
+                                    De olho no Imposto - Automatizar o processo
+                                </a>
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="Programas.html">
+                                Programas
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--<li><a href="#">Contato</a></li> -->
+            </ul>
+
+            <script>
+                $('.cad-btn').click(function () {
+                    $('nav ul ul .cad-show').toggleClass("Show");
+                    $('nav ul ul .first').toggleClass("rotate");
+                });
+                $('.mov-btn').click(function () {
+                    $('nav ul ul .mov-show').toggleClass("Show");
+                    $('nav ul ul .second').toggleClass("rotate");
+                });
+                $('.fis-btn').click(function () {
+                    $('nav ul ul .fis-show').toggleClass("Show");
+                    $('nav ul ul .third').toggleClass("rotate");
+                });
+            </script>
+        </nav>
+    </div>
+    <div class="top">
+        <div class="btn">
+            <span class="fas fa-bars"></span>
+        </div>
+        <script>
+            $('.btn').click(function () {
+                $(this).toggleClass("click");
+                $('.sidebar').toggleClass("show");
+                $('nav ul').toggleClass("show");
+            });
+        </script>
+    </div>
+
+    <main>
+        <div class="titulo">
+            <h1>TABELA CST / CSOSN</h1>
+        </div>
+        <div class="content">
+
+            <h2>Origem</h2>
+
+
+            <ul id="l1">
+                <li>
+                    <p>0 - Nacional, exceto as indicadas nos códigos 3 a 5</p>
+                    <br>
+                </li>
+                <li>
+                    <p>1 - Estrangeira - Importação direta, exceto a indicada no código 6</p>
+                    <br>
+                </li>
+                <li>
+                    <p>2 - Estrangeira - Adquirida no mercado interno, exceto a indicada no código 7
+                    </p>
+                    <br>
+                </li>
+                <li>
+                    <p>3 - Nacional, mercadoria ou bem com Conteúdo de Importação superior a 40%</p>
+                    <br>
+                </li>
+                <li>
+                    <p>4 - Nacional, cuja produção tenha sido feita em conformidade com os processos
+                        produtivos básicos de que tratam o Decreto-Lei nº 288/67 e as Leis nºs 8.248/91, 8.387/91,
+                        10.176/01 e
+                        11.484/07</p>
+                        <br>
+                </li>
+                <li>
+                    <p>5 - Nacional, mercadoria ou bem com Conteúdo de Importação inferior ou igual a
+                        40%</p>
+                        <br>
+                </li>
+                <li>
+                    <p>6 - Estrangeira - Importação direta, sem similar nacional, constante em lista de
+                        Resolução CAMEX</p>
+                        <br>
+                </li>
+                <li>
+                    <p>7 - Estrangeira - Adquirida no mercado interno, sem similar nacional, constante
+                        em lista de Resolução CAMEX</p>
+                        <br>
+
+                    <h2>Código da Situação Tributária (CST) - O CST é a origem (indicada acima) mais 2 números:</h2>
+
+                </li>
+                <li>
+                    <p>00 - Tributada integralmente</p>
+                    <br>
+                </li>
+                <li>
+                    <p>10 - Tributada e com cobrança do ICMS por substituição tributária</p>
+                </li>
+                <li>
+                    <p>20 - Com redução da BC</p>
+                    <br>
+                </li>
+                <li>
+                    <p>30 - Isenta / não tributada e com cobrança do ICMS por substituição tributária
+                    </p>
+                    <br>
+                </li>
+                <li>
+                    <p>40 - Isenta</p>
+                    <br>
+                </li>
+                <li>
+                    <p>41 - Não tributada</p>
+                    <br>
+                </li>
+                <li>
+                    <p>50 - Com suspensão</p>
+                    <br>
+                </li>
+                <li>
+                    <p>51 - Com diferimento</p>
+                    <br>
+                </li>
+                <li>
+                    <p>60 - ICMS cobrado anteriormente por substituição tributária</p>
+                    <br>
+                </li>
+                <li>
+                    <p>70 - Com redução da BC e cobrança do ICMS por substituição tributária</p>
+                    <br>
+                </li>
+                <li>
+                    <p>90 - Outras</p>
+                    <br>
+
+                    <h2>Simples (CSOSN) - Na NF-eletrônica 2.0 se a empresa for optante pelo Simples Nacional o CST é
+                        chamado de
+                        CSOSN (Código de Situação da Operação no Simples Nacional), que é composto pela origem mais 3
+                        números:</h2>
+
+                </li>
+                <li>
+                    <p>101 - Tributada pelo Simples Nacional com permissão de crédito</p>
+                    <br>
+                </li>
+                <li>
+                    <p>102 - Tributada pelo Simples Nacional sem permissão de crédito</p>
+                    <br>
+                </li>
+                <li>
+                    <p>103 - Isenção do ICMS no Simples Nacional para faixa de receita bruta</p>
+                    <br>
+                </li>
+                <li>
+                    <p>201 - Tributada pelo Simples Nacional com permissão de crédito e com cobrança do
+                        ICMS por substituição tributária</p>
+                        <br>
+                </li>
+                <li>
+                    <p>202 - Tributada pelo Simples Nacional sem permissão de crédito e com cobrança do
+                        ICMS por substituição tributária</p>
+                        <br>
+                </li>
+                <li>
+                    <p>203 - Isenção do ICMS no Simples Nacional para faixa de receita bruta e com
+                        cobrança do ICMS por substituição tributária</p>
+                        <br>
+                </li>
+                <li>
+                    <p>300 - Imune</p>
+                    <br>
+                </li>
+                <li>
+                    <p>400 - Não tributada pelo Simples Nacional</p>
+                    <br>
+                </li>
+                <li>
+                    <p>500 - ICMS cobrado anteriormente por substituição tributária (substituído) ou
+                        por antecipação</p>
+                        <br>
+                </li>
+                <li>
+                    <p>900 - Outros</p>
+                    <br>
+                </li>
+            </ul>
+        </div>
+
+        <div class="titulo">
+            <h1>Código de Situação da Operação
+                no Simples Nacional – CSOSN</h1>
+        </div>
+        <div class="content">
+            <p>Para empresa
+                optante
+                pelo Simples Nacional:</p>
+                <br>
+            <ul id="l2">
+                <li>
+                    <h4>101- Tributada pelo Simples Nacional com permissão de crédito </h4>
+                            Classificam-se neste código as operações que permitem a indicação da alíquota do ICMS devido no
+                            Simples Nacional e o valor do crédito correspondente.
+                            <br> <br>
+                </li>
+                <li>
+                    <h4>102- Tributada pelo Simples Nacional sem permissão de crédito </h4>
+                            Classificam-se neste código as operações que não permitem a indicação da alíquota do ICMS devido
+                            pelo Simples Nacional e do valor do crédito, e não estejam abrangidas nas hipóteses dos códigos
+                            103,
+                            203, 300, 400, 500 e 900.
+                            <br> <br>
+                </li>
+                <li>
+                    <h4>103- Isenção do ICMS no Simples Nacional para faixa de receita bruta </h4>Classificam-se neste código
+                        as operações praticadas por optantes pelo Simples Nacional
+                        contemplados com isenção concedida para faixa de receita bruta nos termos da Lei Complementar nº
+                        123, de 2006.
+                        <br> <br>
+                </li>
+            </ul>
+            <ul id="l3">
+                <li>
+                    <h4>201- Tributada pelo Simples Nacional com permissão de crédito e com cobrança do
+                        ICMS por substituição tributária</h4> Classificam-se neste
+                            código
+                            as operações que permitem a indicação da alíquota do ICMS devido pelo Simples Nacional e do
+                            valor do
+                            crédito, e com cobrança do ICMS por substituição tributária.
+                            <br> <br>
+                </li>
+                <li>
+                    <h4>202- Tributada pelo Simples Nacional sem permissão de crédito e com cobrança do
+                        ICMS por substituição tributária </h4> Classificam-se neste
+                            código
+                            as operações que não permitem a indicação da alíquota do ICMS devido pelo Simples Nacional e do
+                            valor do crédito, e não estejam abrangidas nas hipóteses dos códigos 103, 203, 300, 400, 500 e
+                            900,
+                            e com cobrança do ICMS por substituição tributária.
+                            <br> <br>
+                </li>
+                <li>
+                    <h4>203- Isenção do ICMS no Simples Nacional para faixa de receita bruta e com
+                        cobrança do ICMS por substituição tributária </h4>
+                            Classificam-se
+                            neste código as operações praticadas por optantes pelo Simples Nacional
+                            contemplados
+                            com isenção para faixa de receita bruta nos termos da Lei Complementar nº 123, de 2006, e com cobrança do
+                            ICMS
+                            por substituição tributária.
+                            <br> <br>
+                </li>
+            
+            <li>
+                <h4>300 - Imune </h4> Classificam-se
+                        neste código as operações praticadas por optantes pelo Simples Nacional contempladas com imunidade do
+                        ICMS.
+                        <br> <br>
+            </li>
+            <li>
+                <h4>400 - Não tributada pelo Simples Nacional
+                </h4> Classificam-se neste código as operações praticadas por optantes pelo Simples Nacional não
+                        sujeitas à tributação pelo ICMS dentro do Simples Nacional.
+                        <br> <br>
+            </li>
+            <li>
+                <h4>500 - ICMS cobrado anteriormente por
+                    substituição tributária (substituído) ou por antecipação </h4> Classificam-se neste código as
+                        operações sujeitas exclusivamente ao regime de substituição tributária na condição de substituído
+                        tributário
+                        ou no caso de antecipações.
+                        <br> <br>
+            </li>
+            <li>
+                <h4>900 - Outros </h4>
+                        Classificam-se
+                        neste código as demais operações que não se enquadrem nos códigos 101, 102, 103, 201, 202, 203, 300, 400
+                        e
+                        500.
+            </li>
+                </ul>
+                    <br> <br> <br>
+            <h3>NOTA EXPLICATIVA:</h3>
+            <p>O Código de Situação da Operação no Simples
+                Nacional - CSOSN será usado na Nota Fiscal Eletrônica exclusivamente quando o Código de Regime Tributário -
+                CRT
+                for igual a &quot;1″, e substituirá os códigos da Tabela B - Tributação pelo ICMS do Anexo Código de
+                Situação
+                Tributária - CST do Convênio s/nº de 15 de dezembro de 1970.</p>
+        </div>
+    </main>
+
+    <footer>
+		<div class="rodape">
+			<div class="btn-ant">
+				<a href="Siglas.html">Anterior</a>
+			</div>
+			<div class="btn-prox">
+				<a href="tabela-CST-PIS-COFINS.html">Próximo</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>

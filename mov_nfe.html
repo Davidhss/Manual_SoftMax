@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softmax - Nota Fiscal Eletrônica</title>
+    <link rel="stylesheet" href="css/style_menuv.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style_mov-venda.css">
+</head>
+
+<body>
+    <div class="Menu">
+        <nav class="sidebar">
+            <ul>
+                <li class="inicio"><a target="_blank" href="http://softmax.com.br/site2/">Home <i
+                            class="fa fa-external-link"></i></a></li>
+                <li><a>Sobre</a></li>
+                <li><a>Apresentação de Telas/Funções</a>
+                    <ul>
+                        <!--<a href ="frame_a.html" target ="showframe">Moldura a</a><br>-->
+                        <li><a href="menu.html" target="showframe">Menu Principal</a></li>
+
+                        <li><a class="cad-btn">Cadastros
+                                <span class="fas fa-caret-down first"></span>
+                            </a> </li>
+
+                        <ul class="cad-show">
+                            <li><a href="cad_cliente.html">Cadastro de Clientes</a></li>
+                            <li><a href="cad_fornecedor.html">Cadastro de Fornecedores</a></li>
+                            <li><a href="cad_transportadora.html">Cadastro de Transportadoras</a>
+                            </li>
+                            <li><a href="cad_pro_pa.html">Cadastro de Produto PA</a></li>
+                            <li><a href="cad_pro_mp.html">Cadastro de produto MP</a></li>
+                            <li><a href="cad_pro_sa.html">Cadastro de Produto SA</a></li>
+                            <li><a href="cad_pro_om.html">Cadastro de produto OM</a></li>
+                            <li><a href="cad_pro_dsp.html">Desenvolvimento de Produtos / Ensaios</a>
+                            </li>
+                            <li><a href="cad_cfop.html">Cadastro de Operações Fiscais -CFOP</a></li>
+                        </ul>
+
+
+                        <li><a class="mov-btn">Movimentos
+                                <span class="fas fa-caret-down second"></span>
+                            </a></li>
+
+                        <ul class="mov-show">
+                            <li><a href="mov_ped_venda.html">Pedido de Venda</a></li>
+                            <li><a href="mov_ped_compra.html">Pedido de Compra</a></li>
+                            <li><a href="mov_empenho.html">Empenho / Ordem de Produção</a></li>
+                            <li><a href="mov_mapa_prod.html">Mapa de Produção</a></li>
+                            <li><a href="mov_fn_cr.html">Finan. Contas a Receber</a></li>
+                            <li><a href="mov_fn_cp.html">Finan. Contas a Pagar</a></li>
+                            <li><a href="mov_fn_ch.html">Finan. Controle de Cheques</a></li>
+                            <li><a href="mov_fn_cb.html">Finan. Controle Bancário</a></li>
+                            <li><a href="mov_fn_cr_cnab.html">Finan. Lanç. Bancários CNAB</a></li>
+                            <li><a href="mov_fn_cr_factory.html">Finan. Lanç. factory (troca de
+                                    títulos)</a></li>
+                            <li class="selecionado"><a href="mov_nfe.html">Emitir Nota Fiscal eletronica NF-e</a></li>
+                        </ul>
+                        <!-- <li><a href="#">SEO</a></li> 
+									<li><a href="#">Sistemas</a></li> -->
+                        <li>
+                            <a href="siglas.html">
+                                Siglas
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="fis-btn">
+                                Fiscal
+                                <span class="fas fa-caret-down third"></span>
+                            </a>
+                        </li>
+
+                        <ul class="fis-show">
+                            <li>
+                                <a href="tabela-CST-CSOSN.html">
+                                    Tabela origem / CST / CSO
+                                </a>
+                            </li>
+                            <li>
+								<a href="tabela-CST-PIS-COFINS.html">
+									Tabela CST PIS/COFINS
+								</a>
+							</li>
+                            <li class="big"><a href="tabela-isentoxnaotrib.html">
+                                    Suspensão, Diferimento, Isenção, Incidência e Não Incidência
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=URCYvjVMIzI="
+                                    target="_blank">
+                                    Manual do Contribuinte v6.00
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </li>
+                            <li class="big">
+                                <a href="tabela_contribuinte.html">
+                                    Contribuinte, contribuinte isento e não contribuinte do ICMS
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+                                    rel="noopener">
+                                    Sefaz
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://deolhonoimposto.ibpt.org.br/" target="_blank">
+                                    De olho no Imposto
+                                    <i class="fa fa-external-link"></i>
+                                </a>
+                            </li>
+                            <li class="big"><a href="deolhonoimposto.html">
+                                    De olho no Imposto - Automatizar o processo
+                                </a>
+                            </li>
+                        </ul>
+                        <li>
+                            <a href="Programas.html">
+                                Programas
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <!--<li><a href="#">Contato</a></li> -->
+            </ul>
+
+            <script>
+                $('.cad-btn').click(function () {
+                    $('nav ul ul .cad-show').toggleClass("Show");
+                    $('nav ul ul .first').toggleClass("rotate");
+                });
+                $('.mov-btn').click(function () {
+                    $('nav ul ul .mov-show').toggleClass("Show");
+                    $('nav ul ul .second').toggleClass("rotate");
+                });
+                $('.fis-btn').click(function () {
+                    $('nav ul ul .fis-show').toggleClass("Show");
+                    $('nav ul ul .third').toggleClass("rotate");
+                });
+            </script>
+        </nav>
+    </div>
+    <div class="top">
+        <div class="btn">
+            <span class="fas fa-bars"></span>
+        </div>
+        <script>
+            $('.btn').click(function () {
+                $(this).toggleClass("click");
+                $('.sidebar').toggleClass("show");
+                $('nav ul').toggleClass("show");
+            });
+        </script>
+    </div>
+
+  <main>
+    <div class="titulo">
+        <h1>Emitir Nota Fiscal eletrônica NF-e</h1>
+    </div>
+    <div class="content">
+        <p>Nossas soluções tem a proposta de otimizar processos, reduzir custos e gerar maior rentabilidade ,em anexo
+          encaminho descritivo de Nosso Software MaxControl.</p>
+        <p>Sistema <strong><u>ERP</u></strong> Sob Medida para sua empresa.</p>
+
+        <ul type="disc" style="text-align: left; padding-left:50px;">
+          <li>Emissão de Nota fiscal eletrônica (módulo integrado, Rápido e fácil)</li>
+          <li>Melhorar a gestão de seu negócio</li>
+          <li>Otimização das atividades administrativas</li>
+          <li>PCP – Planejamento e Controle de produção</li>
+          <li>MRP – Planejamento dos recursos de Manufatura</li>
+          <li>Mais praticidade, desempenho e produtividade para sua empresa.</li>
+        </ul>
+
+        <p>Contamos com módulos de administração e foco na área produtiva da empresa</p>
+        <p>Nosso software visa a integração de todos os departamentos da Empresa.</p>
+        <p>Com o <strong>Emissor de Nota fiscal mais simples e rápido do Mercado</strong>, focado na facilidade de uso.
+          Dispensamos o departamento de Faturamento. </p>
+        <p>Uma vez cadastrado e estabelecido <strong>o perfil tributário</strong> da empresa, o próprio departamento de
+          vendas após emitir o pedido, e esse:<br>
+          - Com liberação <strong>Análise Crítica</strong> (validação e assinatura digital do Gerente);<br>
+          - <strong>Aprovado pelo Financeiro</strong> (onde se analisa o perfil do Cliente e limite
+          de crédito);<br>
+          - Informado o <strong>Romaneio</strong> (liberação dos itens pela expedição).</p>
+        <p><strong>Com apenas um clique se emite a Nota Fiscal.</strong></p>
+        <p>Nosso processo fabril visa o controle da Produção e gerenciamento das Matérias Primas e gestão de Compras.
+        </p>
+        <p>Temos módulo online para emissão de pedido, orçamento e cadastro de cliente através de Celular/Tablet/PC.
+        </p>
+        <p>Conheça nossas soluções para PCP, mapa de produção e formulação de produtos. </p>
+        <p>Acesse nosso site: <a href="http://www.softmax.com.br">www.softmax.com.br</a></p>
+        <br>
+        <p>
+          Para Emitir NF-e a Partir do pedido de venda, clica no icone <img src="Imagens/nfe_icone.PNG" width="75" height="55"
+            alt="" /> </p>
+        A tela a seguir será aberta com os dados da NF-e.
+    </div>
+    <div class="image"><img src="Imagens/mov_nfe.png" width="940" height="490" alt="" /></div>
+    <div class="content">
+        Clique em faturar e em seguida confirmar para emissão da Nf-e.
+        <p> Todos os processos são automaticos:
+          <br>
+          <li>Baixa de estoque</li>
+          <li>Financeiro</li>
+          <li>Comissão</li>
+          </br>
+        </p>
+    </div>
+  </main>
+  <footer>
+    <div class="rodape">
+        <div class="btn-ant">
+            <a href="mov_fn_cr_factory.html">Anterior</a>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>

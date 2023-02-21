@@ -1,0 +1,9 @@
+@media (max-width: 1500px){
+    img{
+        transform: scale(.8);
+    }
+    .first-image{
+        height: 450px;
+    }
+
+}

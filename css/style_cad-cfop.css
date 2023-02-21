@@ -1,0 +1,73 @@
+.pagecontent{
+	color: rgb(87, 87, 87);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: rgb(66, 139, 202);
+    text-decoration: none;
+}
+
+.objetivo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+    gap: 20px;
+}
+.objetivo h3{
+    font-size: 35px;
+    font-weight: bold;
+    color: #646464;
+}
+.objetivo p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #646464;
+    text-align: center;
+    line-height: 32px;
+    padding: 0 20px;
+    font-size: 20px;
+}
+
+.funciona{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #f3f3f3;
+    position: relative;
+    gap: 20px;
+}
+
+.funciona .topo h3{
+    font-size: 35px;
+    font-weight: bold;
+    color: #646464;
+}
+.funciona .topo {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.funciona .mid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.funciona ol{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #646464;
+    line-height: 35px;
+    padding: 0 20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.funciona img{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.144);
+}

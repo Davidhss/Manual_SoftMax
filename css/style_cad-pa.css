@@ -1,0 +1,77 @@
+.first-image img{
+   width: 600px;
+   height: 500px;
+}
+
+img{
+    height: 400px;
+}
+
+.second-img{
+    padding: 20px;
+    background-color: #f3f3f3;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.second-img img{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.116);
+}
+
+.third-img{
+    height: 550px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+.third-img img{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.116);
+}
+
+.forth-img{
+    background-color: #f3f3f3;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.forth-img img{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.116);
+}
+.forth-img h3{
+    font-size: 23px;
+    font-weight: bold;
+    color: #646464;
+}
+
+.custo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.forth-img p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #646464;
+    text-align: center;
+    line-height: 28px;
+    font-size: 20px;
+}
+.forth-img ul{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #646464;
+    line-height: 28px;
+    font-size: 19px;
+}

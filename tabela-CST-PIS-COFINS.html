@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Softmax - Tabela CST PIS COFINS</title>
+	<link rel="stylesheet" href="css/style_menuv.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/style_contribuinte.css">
+</head>
+
+<body>
+	<div class="Menu">
+		<nav class="sidebar">
+			<ul>
+				<li class="inicio"><a target="_blank" href="http://softmax.com.br/site2/">Home <i
+							class="fa fa-external-link"></i></a></li>
+				<li><a>Sobre</a></li>
+				<li><a>Apresentação de Telas/Funções</a>
+					<ul>
+						<!--<a href ="frame_a.html" target ="showframe">Moldura a</a><br>-->
+						<li><a href="menu.html" target="showframe">Menu Principal</a></li>
+
+						<li><a class="cad-btn">Cadastros
+								<span class="fas fa-caret-down first"></span>
+							</a> </li>
+
+						<ul class="cad-show">
+							<li><a href="cad_cliente.html">Cadastro de Clientes</a></li>
+							<li><a href="cad_fornecedor.html">Cadastro de Fornecedores</a></li>
+							<li><a href="cad_transportadora.html">Cadastro de Transportadoras</a>
+							</li>
+							<li><a href="cad_pro_pa.html">Cadastro de Produto PA</a></li>
+							<li><a href="cad_pro_mp.html">Cadastro de produto MP</a></li>
+							<li><a href="cad_pro_sa.html">Cadastro de Produto SA</a></li>
+							<li><a href="cad_pro_om.html">Cadastro de produto OM</a></li>
+							<li><a href="cad_pro_dsp.html">Desenvolvimento de Produtos / Ensaios</a>
+							</li>
+							<li class="selecionado"><a href="cad_cfop.html">Cadastro de Operações Fiscais -CFOP</a></li>
+						</ul>
+
+
+						<li><a class="mov-btn">Movimentos
+								<span class="fas fa-caret-down second"></span>
+							</a></li>
+
+						<ul class="mov-show">
+							<li><a href="mov_ped_venda.html">Pedido de Venda</a></li>
+							<li><a href="mov_ped_compra.html">Pedido de Compra</a></li>
+							<li><a href="mov_empenho.html">Empenho / Ordem de Produção</a></li>
+							<li><a href="mov_mapa_prod.html">Mapa de Produção</a></li>
+							<li><a href="mov_fn_cr.html">Finan. Contas a Receber</a></li>
+							<li><a href="mov_fn_cp.html">Finan. Contas a Pagar</a></li>
+							<li><a href="mov_fn_ch.html">Finan. Controle de Cheques</a></li>
+							<li><a href="mov_fn_cb.html">Finan. Controle Bancário</a></li>
+							<li><a href="mov_fn_cr_cnab.html">Finan. Lanç. Bancários CNAB</a></li>
+							<li><a href="mov_fn_cr_factory.html">Finan. Lanç. factory (troca de
+									títulos)</a></li>
+							<li><a href="mov_nfe.html">Emitir Nota Fiscal eletronica NF-e</a></li>
+						</ul>
+						<!-- <li><a href="#">SEO</a></li> 
+									<li><a href="#">Sistemas</a></li> -->
+						<li>
+							<a href="siglas.html">
+								Siglas
+							</a>
+						</li>
+
+						<li>
+							<a class="fis-btn">
+								Fiscal
+								<span class="fas fa-caret-down third"></span>
+							</a>
+						</li>
+
+						<ul class="fis-show">
+							<li>
+								<a href="tabela-CST-CSOSN.html">
+									Tabela origem / CST / CSO
+								</a>
+							</li>
+							<li>
+								<a href="tabela-CST-PIS-COFINS.html">
+									Tabela CST PIS/COFINS
+								</a>
+							</li>
+							<li class="big"><a href="tabela-isentoxnaotrib.html">
+									Suspensão, Diferimento, Isenção, Incidência e Não Incidência
+								</a>
+							</li>
+							<li>
+								<a href="http://www.nfe.fazenda.gov.br/portal/exibirArquivo.aspx?conteudo=URCYvjVMIzI="
+									target="_blank">
+									Manual do Contribuinte v6.00
+									<i class="fa fa-external-link"></i>
+								</a>
+							</li>
+							<li class="big">
+								<a href="tabela_contribuinte.html">
+									Contribuinte, contribuinte isento e não contribuinte do ICMS
+								</a>
+							</li>
+							<li>
+								<a href="http://www.nfe.fazenda.gov.br/portal/principal.aspx" target="_blank"
+									rel="noopener">
+									Sefaz
+									<i class="fa fa-external-link"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://deolhonoimposto.ibpt.org.br/" target="_blank">
+									De olho no Imposto
+									<i class="fa fa-external-link"></i>
+								</a>
+							</li>
+							<li class="big"><a href="deolhonoimposto.html">
+									De olho no Imposto - Automatizar o processo
+								</a>
+							</li>
+						</ul>
+						<li>
+							<a href="Programas.html">
+								Programas
+							</a>
+						</li>
+					</ul>
+				</li>
+				<!--<li><a href="#">Contato</a></li> -->
+			</ul>
+
+			<script>
+				$('.cad-btn').click(function () {
+					$('nav ul ul .cad-show').toggleClass("Show");
+					$('nav ul ul .first').toggleClass("rotate");
+				});
+				$('.mov-btn').click(function () {
+					$('nav ul ul .mov-show').toggleClass("Show");
+					$('nav ul ul .second').toggleClass("rotate");
+				});
+				$('.fis-btn').click(function () {
+					$('nav ul ul .fis-show').toggleClass("Show");
+					$('nav ul ul .third').toggleClass("rotate");
+				});
+			</script>
+		</nav>
+	</div>
+	<div class="top">
+		<div class="btn">
+			<span class="fas fa-bars"></span>
+		</div>
+		<script>
+			$('.btn').click(function () {
+				$(this).toggleClass("click");
+				$('.sidebar').toggleClass("show");
+				$('nav ul').toggleClass("show");
+			});
+		</script>
+	</div>
+
+	<main style="text-align: center;">
+		<div id="main-content" class="mh-content" role="main" itemprop="mainContentOfPage">
+			<article id="page-2405" class="post-2405 page type-page status-publish hentry">
+				<div class="titulo">
+					<h1>Tabelas CST PIS / COFINS</h1>
+				</div>
+				<div class="content">
+					<div class="entry-content mh-clearfix">
+						<h2 style="text-align: center;"><strong>CST – PIS/Pasep e COFINS </strong></h2>
+						<p style="text-align: justify;">A Instrução Normativa RFB nº 1.009, de 10 de fevereiro de 2010,
+							em
+							seu
+							Anexo Único estabeleceu os Códigos de Situação Tributária – CST, relativos as contribuições
+							para
+							o
+							PIS/Pasep e a COFINS, que deverão ser utilizados pelos contribuintes: &#8211; na elaboração
+							dos
+							arquivos digitais da Escrituração Fiscal Digital (EFD);e &#8211; emissão de Nota Fiscal
+							Eletrônica –
+							Nfe.</p>
+						<ul id='postTabs_ul_2405' class='postTabs' style='display:none'>
+							<li id='postTabs_li_0_2405' class='postTabs_curr'><a id="2405_0"
+									onMouseOver="posTabsShowLinks(' CST Operações de Saída'); return true;"
+									onMouseOut="posTabsShowLinks();" class='postTabsLinks'> CST Operações de Saída</a>
+							</li>
+							<li id='postTabs_li_1_2405'><a id="2405_1"
+									onMouseOver="posTabsShowLinks(' CST Operações de Entrada'); return true;"
+									onMouseOut="posTabsShowLinks();" class='postTabsLinks'> CST Operações de Entrada</a>
+							</li>
+							<li id='postTabs_li_2_2405'><a id="2405_2"
+									onMouseOver="posTabsShowLinks(' NOTAS'); return true;"
+									onMouseOut="posTabsShowLinks();" class='postTabsLinks'> NOTAS</a></li>
+						</ul>
+						<div class='postTabs_divs postTabs_curr_div' id='postTabs_0_2405'>
+							<span class='postTabs_titles'><b> CST Operações de Saída</b></span>
+							<h2><strong> CST – Operações de Saídas</strong></h2>
+							<p style="text-align: justify;">Para identificação das saídas na Nfe e na EFD-Contribuições
+								deverão
+								ser informados os seguintes códigos de situação tributária para o PIS/Pasep e a COFINS:
+							</p>
+							<p>&nbsp;</p>
+							<table style="height: 631px;" width="620">
+								<tbody>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>Código</strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Descrição</strong></td>
+										<td width="109">
+											<p style="text-align: center;"><b>Incidência</b><strong> do Imposto</strong>
+											</p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>01</strong></p>
+										</td>
+										<td width="508">
+											<p style="text-align: center;"><strong>Operação Tributável com Alíquota
+													Básica</strong><br />
+												(Operações de saídas cujas receitas estejam sujeitas às alíquotas de:
+												0,65%
+												PIS
+												e 3,00% COFINS no Regime Cumulativo e 1,65% PIS e 7,6% COFINS no Regime
+												Não
+												Cumulativo)</p>
+										</td>
+										<td style="text-align: center;" width="109"><strong>Sim</strong></td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>02</strong></p>
+										</td>
+										<td width="508">
+											<p style="text-align: center;"><strong>Operação Tributável com Alíquota
+													Diferenciada</strong></p>
+										</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>03</strong></p>
+										</td>
+										<td width="508">
+											<p style="text-align: center;"><strong>Operação Tributável com Alíquota por
+													Unidade
+													de Medida de Produto</strong><br />
+												(Quando o fabricante ou importador fez a opção pelos regimes especiais
+												de
+												tributação como o RECOB ou o REFRI)</p>
+										</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>04</strong></p>
+										</td>
+										<td width="508">
+											<p style="text-align: center;"><strong>Operação Tributável Monofásica
+													&#8211;
+													Revenda a Alíquota Zero</strong><br />
+												(Receitas decorrentes da revenda de produtos que tiveram sua tributação
+												concentrada na etapa anterior, como por exemplo bebidas frias,
+												auto-peças,
+												pneus, medicamentos&#8230;)</p>
+										</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>05</strong></p>
+										</td>
+										<td width="508">
+											<p style="text-align: center;"><strong>Operação Tributável por Substituição
+													Tributária<br />
+												</strong> (A revenda de produtos sujeitos a substituição tributária das
+												contribuições será com alíquota zero, portanto quando o revendedor
+												utilizar
+												este
+												código deverá indicar também que a alíquota é zero, pois o código também
+												será
+												utilizado pelo fabricante ou importador)</p>
+										</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>06</strong></p>
+										</td>
+										<td width="508">
+											<p style="text-align: center;"><strong>Operação Tributável a Alíquota
+													Zero<br />
+												</strong>(Operações cujas receitas estão sujeitas à alíquota zero também
+												na
+												fabricação/importação e não somente na revenda)</p>
+										</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>07</strong></p>
+										</td>
+										<td width="508">
+											<p style="text-align: center;"><strong>Operação Isenta das
+													Contribuições</strong>
+											</p>
+										</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>08</strong></p>
+										</td>
+										<td width="508">
+											<p style="text-align: center;"><strong>Operação sem Incidência das
+													Contribuições</strong><br />
+												(Este CST também será utilizado para as receitas não consideradas
+												como<br />
+												faturamento no regime cumulativo; exportação de mercadorias)</p>
+										</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>09</strong></p>
+										</td>
+										<td width="508">
+											<p style="text-align: center;"><strong>Operação com Suspensão das
+													Contribuições</strong></p>
+										</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td style="text-align: center;" width="85"><strong>49</strong></td>
+										<td style="text-align: center;" width="508"><strong>Outras Operações de
+												Saída</strong><br />
+											(Utilização deste CST para todas as saídas não representativas de receitas
+											tais
+											como: remessa para industrialização; remessa para conserto; remessa para
+											demonstração; devolução de compras; transferências entre matriz e
+											filiais&#8230;)
+										</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Depende</strong></p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>&nbsp;</p>
+						</div>
+						<div class='postTabs_divs' id='postTabs_1_2405'>
+							<span class='postTabs_titles'><b> CST Operações de Entrada</b></span>
+							<h2><strong> CST – Entradas Créditos Básicos Regime Não Cumulativo</strong></h2>
+							<p style="text-align: justify;">Estes CST deverão ser utilizados nas aquisições efetuadas
+								por
+								pessoas jurídicas sujeitas ao regime de apuração do PIS/Pasep e da COFINS na sistemática
+								da
+								não
+								cumulatividade, conforme cada situação, em relação aos créditos básicos (alíquotas de
+								1,65%
+								e
+								7,6%, respectivamente):</p>
+							<table style="height: 331px;" width="620">
+								<tbody>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>Código</strong></p>
+										</td>
+										<td style="text-align: center;" width="510"><strong>Descrição</strong></td>
+										<td width="107">
+											<p style="text-align: center;"><strong>Incidência do Imposto</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>50 </strong></p>
+										</td>
+										<td style="text-align: center;" width="510"><strong>Operação com Direito a
+												Crédito</strong> &#8211; Vinculada Exclusivamente a Receita Tributada no
+											Mercado
+											Interno</td>
+										<td width="107">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>51 </strong></p>
+										</td>
+										<td style="text-align: center;" width="510"><strong>Operação com Direito a
+												Crédito</strong> &#8211; Vinculada Exclusivamente a Receita Não
+											Tributada no
+											Mercado Interno</td>
+										<td width="107">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>52 </strong></p>
+										</td>
+										<td style="text-align: center;" width="510"><strong>Operação com Direito a
+												Crédito</strong> &#8211; Vinculada Exclusivamente a Receita de
+											Exportação
+										</td>
+										<td width="107">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>53 </strong></p>
+										</td>
+										<td style="text-align: center;" width="510"><strong>Operação com Direito a
+												Crédito</strong> &#8211; Vinculada a Receitas Tributadas e
+											Não-Tributadas no
+											Mercado Interno</td>
+										<td width="107">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>54 </strong></p>
+										</td>
+										<td style="text-align: center;" width="510"><strong>Operação com Direito a
+												Crédito
+											</strong>&#8211; Vinculada a Receitas Tributadas no Mercado Interno e de
+											Exportação
+										</td>
+										<td width="107">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>55 </strong></p>
+										</td>
+										<td style="text-align: center;" width="510"><strong>Operação com Direito a
+												Crédito
+											</strong>&#8211; Vinculada a Receitas Não-Tributadas no Mercado Interno e de
+											Exportação</td>
+										<td width="107">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>56 </strong></p>
+										</td>
+										<td style="text-align: center;" width="510"><strong>Operação com Direito a
+												Crédito</strong> &#8211; Vinculada a Receitas Tributadas e
+											Não-Tributadas no
+											Mercado Interno, e de Exportação</td>
+										<td width="107">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>&nbsp;</p>
+							<h2><strong> CST – Entradas Créditos Presumidos Regime Não Cumulativo</strong></h2>
+							<p style="text-align: justify;">Estes CST deverão ser utilizados nas aquisições efetuadas
+								por
+								pessoas jurídicas sujeitas ao regime de apuração do PIS/Pasep e da COFINS na sistemática
+								da
+								não
+								cumulatividade, conforme cada situação, em relação aos créditos presumidos (as alíquotas
+								são
+								variáveis conforme a previsão da legislação específica que estabeleceu o crédito
+								presumido):
+							</p>
+							<table style="height: 353px;" width="620">
+								<tbody>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>Código</strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Descrição</strong></td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Incidência do Imposto</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>60 </strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Crédito Presumido</strong>
+											&#8211;
+											Operação de Aquisição Vinculada Exclusivamente<br />
+											a Receita Tributada no Mercado Interno</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>61 </strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Crédito Presumido</strong>
+											&#8211;
+											Operação de Aquisição Vinculada Exclusivamente<br />
+											a Receita Não-Tributada no Mercado Interno</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>62 </strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Crédito Presumido</strong>
+											&#8211;
+											Operação de Aquisição Vinculada Exclusivamente<br />
+											a Receita de Exportação</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>63 </strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Crédito Presumido</strong>
+											&#8211;
+											Operação de Aquisição Vinculada a Receitas<br />
+											Tributadas e Não-Tributadas no Mercado Interno</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>64 </strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Crédito Presumido</strong>
+											&#8211;
+											Operação de Aquisição Vinculada a Receitas<br />
+											Tributadas no Mercado Interno e de Exportação</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>65 </strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Crédito Presumido</strong>
+											&#8211;
+											Operação de Aquisição Vinculada a Receitas<br />
+											Não-Tributadas no Mercado Interno e de Exportação</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>66 </strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Crédito Presumido</strong>
+											&#8211;
+											Operação de Aquisição Vinculada a Receitas<br />
+											Tributadas e Não-Tributadas no Mercado Interno, e de Exportação</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="85">
+											<p style="text-align: center;"><strong>67 </strong></p>
+										</td>
+										<td style="text-align: center;" width="508"><strong>Crédito Presumido</strong>
+											&#8211;
+											Outras Operações</td>
+										<td width="109">
+											<p style="text-align: center;"><strong>Sim</strong></p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>&nbsp;</p>
+							<h2><strong>CST – Entradas Créditos Presumidos Regime Não Cumulativo</strong></h2>
+							<p style="text-align: justify;">Estes CST deverão ser utilizados nas aquisições efetuadas
+								por
+								pessoas jurídicas sujeitas ao regime de apuração do PIS/Pasep e da COFINS na sistemática
+								da
+								não
+								cumulatividade, conforme cada situação, em relação aos créditos presumidos (as alíquotas
+								são
+								variáveis conforme a previsão da legislação específica que estabeleceu o crédito
+								presumido):
+							</p>
+							<table style="height: 298px;" width="620">
+								<tbody>
+									<tr>
+										<td width="89">
+											<p style="text-align: center;"><strong>Código</strong></p>
+										</td>
+										<td style="text-align: center;" width="497"><strong>Descrição</strong></td>
+										<td width="117">
+											<p style="text-align: center;"><strong>Incidência do Imposto</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="89">
+											<p style="text-align: center;"><strong>70 </strong></p>
+										</td>
+										<td style="text-align: center;" width="497"><strong>Operação de Aquisição sem
+												Direito a
+												Crédito</strong><br />
+											(As aquisições de produtos sujeitos a tributação monofásica,<br />
+											destinados a revenda serão ser informados neste CST)</td>
+										<td width="117">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="89">
+											<p style="text-align: center;"><strong>71 </strong></p>
+										</td>
+										<td style="text-align: center;" width="497"><strong>Operação de Aquisição com
+												Isenção</strong></td>
+										<td width="117">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="89">
+											<p style="text-align: center;"><strong>72 </strong></p>
+										</td>
+										<td style="text-align: center;" width="497"><strong>Operação de Aquisição com
+												Suspensão</strong></td>
+										<td width="117">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="89">
+											<p style="text-align: center;"><strong>73 </strong></p>
+										</td>
+										<td style="text-align: center;" width="497"><strong>Operação de Aquisição a
+												Alíquota
+												Zero</strong></td>
+										<td width="117">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="89">
+											<p style="text-align: center;"><strong>74 </strong></p>
+										</td>
+										<td style="text-align: center;" width="497"><strong>Operação de Aquisição sem
+												Incidência
+												da Contribuição</strong></td>
+										<td width="117">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="89">
+											<p style="text-align: center;"><strong>75 </strong></p>
+										</td>
+										<td style="text-align: center;" width="497"><strong>Operação de Aquisição por
+												Substituição Tributária</strong></td>
+										<td width="117">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="89">
+											<p style="text-align: center;"><strong>98 </strong></p>
+										</td>
+										<td style="text-align: center;" width="497"><strong>Outras Operações de
+												Entrada</strong><br />
+											(Nestes CST serão informadas as entradas decorrentes de retorno de<br />
+											remessa para industrialização, conserto, demonstração&#8230;)</td>
+										<td width="117">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="89">
+											<p style="text-align: center;"><strong>99 </strong></p>
+										</td>
+										<td style="text-align: center;" width="497"><strong>Outras Operações</strong>
+										</td>
+										<td width="117">
+											<p style="text-align: center;"><strong>Não</strong></p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>&nbsp;</p>
+							<p><strong>Nota1:</strong> A pessoa jurídica optante pelo lucro presumido, não informará
+								dados
+								referente às suas entradas na EFD-Contribuições.</p>
+							<p><strong>Nota2:</strong> A pessoa jurídica sujeita a sistemática de não cumulatividade,
+								somente
+								fará a escrituração referente às suas aquisições geradoras de créditos, as demais
+								aquisições
+								estão dispensadas dos seus registros.</p>
+							<p>&nbsp;</p>
+							<h2><strong>Simples Nacional – CST PIS/Pasep e COFINS NFe</strong></h2>
+							<p>O CST PIS e Cofins a ser informado quando da emissão de NF-e, por empresas optantes do
+								Simples
+								Nacional, será:</p>
+							<p>&nbsp;</p>
+							<table style="height: 97px;" width="620">
+								<tbody>
+									<tr>
+										<td width="64">
+											<p style="text-align: center;"><strong>Código</strong></p>
+										</td>
+										<td width="700">
+											<p style="text-align: center;"><strong>Descrição</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="64">
+											<p style="text-align: center;"><strong>49</strong></p>
+										</td>
+										<td width="700">
+											<p style="text-align: center;"><strong>Vendas tributadas no regime do
+													Simples
+													Nacional (Recolhimento único)</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="64">
+											<p style="text-align: center;"><strong>02</strong></p>
+										</td>
+										<td width="700">
+											<p style="text-align: center;"><strong>Fabricação de produtos sujeitos a
+													tributação
+													monofásicas (medicamentos, autopeças)</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="64">
+											<p style="text-align: center;"><strong>04</strong></p>
+										</td>
+										<td width="700">
+											<p style="text-align: center;"><strong>Revenda de produtos sujeitos a
+													tributação
+													monofásicas (Combustíveis, bebidas frias, medicamentos, autopeças,
+													etc.)</strong></p>
+										</td>
+									</tr>
+									<tr>
+										<td width="64">
+											<p style="text-align: center;"><strong>05</strong></p>
+										</td>
+										<td width="700">
+											<p style="text-align: center;"><strong>Tributadas no regime de substituição
+													tributária (cigarros, motocicletas, maquinas agrícolas
+													auto-propulsadas).</strong></p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<table style="height: 97px;" width="620">
+								<tbody>
+									<tr>
+										<td style="width: 62px;">
+											<p style="text-align: center;"><strong>08</strong></p>
+										</td>
+										<td style="width: 542px;">
+											<p style="text-align: center;"><strong>Vendas para exportação e a Pessoa
+													Jurídica
+													comercial exportadora, com o fim específico de exportação</strong>
+											</p>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+							<p>&nbsp;</p>
+						</div>
+						<div class='postTabs_divs' id='postTabs_2_2405'>
+							<span class='postTabs_titles'><b> NOTAS</b></span>
+							<h3 dir="ltr"><strong>NOTAS:</strong></h3>
+							<ul>
+								<li dir="ltr">
+									<p dir="ltr" style="text-align: justify;">As CST´s 49 e 99 podem ou não ser
+										marcadas,
+										depende da situação;</p>
+								</li>
+								<li dir="ltr" style="text-align: justify;">
+									<p dir="ltr">AS CST´s de 60 a 67 não estão vinculadas ao regime da empresa Lucro
+										Presumido
+										ou real.</p>
+								</li>
+								<li dir="ltr">
+									<p dir="ltr" style="text-align: justify;">Geralmente a CST de PIS e COFINS são
+										iguais.
+										Somente não serão iguais por via de força de lei como ocorreu com a compra de
+										britas,
+										onde na entrada as CST´s eram diferentes.</p>
+								</li>
+							</ul>
+							<h2><strong>Grupos da CST de PIS/COFINS</strong></h2>
+							<p dir="ltr">As CST’s de PIS e da COFINS possuem algumas particularidades em relação as
+								demais
+								CST’s
+								pois são divididas em alguns grupos.</p>
+							<h2 dir="ltr"><strong>Operação tributável com alíquota básica (CST 01)</strong></h2>
+							<p>Nas operações que se enquadram neste CST 01, são utilizadas alíquotas conforme a
+								modalidade
+								adotada pela pessoa jurídica, sendo:</p>
+							<ul>
+								<li dir="ltr">
+									<p dir="ltr">Modalidade cumulativa- Pis 0,65% e Cofins 3%;</p>
+								</li>
+								<li dir="ltr">
+									<p dir="ltr">Modalidade não cumulativa- Pis 1,65% e Cofins 7,6%</p>
+								</li>
+							</ul>
+							<h2><strong>Operação tributável com alíquota diferenciada (CST 02)</strong></h2>
+							<p style="text-align: justify;">Os produtos sujeitos a incidência monofásica (recolhimento
+								concentrado) de Pis e Cofins no fabricante ou importador devem utilizar o CST 02. Os
+								produtos
+								sujeitos a utilização deste CST, são: combustíveis, fármacos e perfumarias, veiculos,
+								maquinas e
+								autopeças bebidas frias.</p>
+							<p style="text-align: justify;">Podemos citar como exemplo produtos sujeitos a este CST,
+								quando
+								vendidos pelo fabricante ou importador:</p>
+							<ul>
+								<li dir="ltr" style="text-align: justify;">
+									<p dir="ltr">COMBUSTÍVEIS;</p>
+								</li>
+								<li dir="ltr" style="text-align: justify;">
+									<p dir="ltr">FÁRMACOS E PERFUMARIAS;</p>
+								</li>
+								<li dir="ltr">
+									<p dir="ltr" style="text-align: justify;">VEÍCULOS, MAQUINAS E AUTOPEÇAS;</p>
+								</li>
+							</ul>
+							<h2 dir="ltr"><strong>Operação tributável com alíquota por unidade de medida de produto (CST
+									03)</strong></h2>
+							<p style="text-align: justify;">Dentre os produtos sujeitos a incidência monofásica, temos
+								aqueles
+								que estão sujeitos ao recolhimento de Pis e Cofins por unidade de medida. Os produtos
+								sujeitos
+								ao recolhimento por unidade de medida são combustíveis e álcool, embalagens de bebidas
+								frias,
+								bebidas frias.</p>
+							<p>Em relação aos produtos que se enquadram no CST 03, podes citar:</p>
+							<ul>
+								<li dir="ltr">
+									<p dir="ltr">COMBUSTÍVEIS;</p>
+								</li>
+								<li dir="ltr">
+									<p dir="ltr">EMBALAGENS DE BEBIDAS FRIAS;</p>
+								</li>
+								<li dir="ltr">
+									<p dir="ltr">BEBIDAS FRIAS &#8211; previstas no Decreto 6.707/2007;</p>
+								</li>
+								<li dir="ltr">
+									<p dir="ltr">PAPEL IMUNE</p>
+								</li>
+							</ul>
+							<h2><strong>Operação tributável monofásica &#8211; revenda a alíquota zero (CST 04)</strong>
+							</h2>
+							<p style="text-align: justify;">Na comercialização dos produtos relacionados neste item,
+								OPERAÇÃO
+								TRIBUTÁVEL COM ALÍQUOTA DIFERENCIADA (CST 02) e também OPERAÇÃO TRIBUTÁVEL COM ALÍQUOTA
+								POR
+								UNIDADE DE MEDIDA DE PRODUTO (CST 03), quando realizada por pessoa jurídica não se
+								enquadrar
+								na
+								condição de fabricante, industrial, importador ou a estes equiparados, será utilizado o
+								CST
+								04
+								(Operação Tributável Monofásica &#8211; Revenda a Alíquota Zero).</p>
+							<h2 dir="ltr" style="text-align: justify;"><strong>Operação tributável por substituição
+									tributária
+									(CST 05)</strong></h2>
+							<p style="text-align: justify;">Nos produtos sujeitos a substituição tributária de PIS e
+								COFINS,
+								deverá o fabricante ou importador utilizar o CST 05. A Substituição Tributária de PIS e
+								COFINS é
+								o regime no qual é atribuída a responsabilidade do recolhimento destas contribuições ao
+								fabricante ou importador. A contribuição recolhida pelo fabricante ou importador é
+								maior,
+								antecipando o recolhimento devido em relação às operações seguintes.</p>
+							<p>&nbsp;</p>
+							<p dir="ltr">Exemplo de produtos sujeitos a este CST, quando vendidos pelo fabricante ou
+								importador:
+							</p>
+							<ul>
+								<li dir="ltr">
+									<p dir="ltr">CIGARROS E CIGARRILHAS;</p>
+								</li>
+								<li dir="ltr">
+									<p dir="ltr">MOTOCICLETAS;</p>
+								</li>
+								<li dir="ltr">
+									<p dir="ltr">MAQUINAS AGRICOLAS AUTOPROPULSADAS;</p>
+								</li>
+							</ul>
+							<h2 dir="ltr"><strong>Operação tributável a alíquota zero (CST 06)</strong></h2>
+							<p>Os produtos sujeitos a incidência da alíquota zero do PIS e COFINS e que utilizarão o CST
+								06
+								são
+								geralmente INSUMOS E PRODUTOS AGROPECUÁRIOS:</p>
+							<p>&nbsp;</p>
+							<p>&nbsp;</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+	</main>
+
+	<footer>
+		<div class="rodape">
+			<div class="btn-ant">
+				<a href="tabela-CST-CSOSN.html">Anterior</a>
+			</div>
+			<div class="btn-prox">
+				<a href="tabela-isentoxnaotrib.html">Próximo</a>
+			</div>
+		</div>
+	</footer>
+</body>
+
+</html>
